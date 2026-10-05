@@ -11,16 +11,16 @@
 <link rel="icon" href="assets/tapa-antes-que-la-lluvia-caiga.png" />
 
 <!-- ================================================================
-     ANALYTICS — completar los IDs y listo.
-     GTM_ID:        p.ej. "GTM-XXXXXXX"
-     GA4_ID:        p.ej. "G-XXXXXXXXXX"  (si usás GTM, podés dejarlo vacío y configurar GA4 desde GTM)
-     META_PIXEL_ID: p.ej. "1234567890"
+     ANALYTICS
+     GTM_ID:        vacío (no se usa Google Tag Manager)
+     GA4_ID:        Google Analytics 4
+     META_PIXEL_ID: Pixel de Meta
      ================================================================ -->
 <script>
   window.ANALYTICS = {
     GTM_ID: "",
-    GA4_ID: "",
-    META_PIXEL_ID: ""
+    GA4_ID: "G-XXSF7HHTC8",
+    META_PIXEL_ID: "1111207264931470"
   };
   window.dataLayer = window.dataLayer || [];
   (function () {
@@ -58,6 +58,7 @@
     if (window.fbq && window.ANALYTICS.META_PIXEL_ID) fbq('trackCustom', name, params);
   }
 </script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1111207264931470&ev=PageView&noscript=1" alt="" /></noscript>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
